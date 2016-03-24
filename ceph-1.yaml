@@ -1,0 +1,1 @@
+sunfire::ceph::store::enable_mon: true

@@ -1,0 +1,258 @@
+sunfire::ceph::store::ceph_common_conf_sata_args:
+#  global/mon_osd_full_ratio:
+#    value: 0.95
+  global/debug_buffer:
+    value: 0/0
+  global/debug_objclass:
+    value: 0/0
+  global/debug_throttle:
+    value: 0/0
+  global/log_to_syslog:
+    value: False
+  global/debug_timer:
+    value: 0/0
+  global/debug_lockdep:
+    value: 0/0
+  global/debug_mds_log:
+    value: 0/0
+  global/debug_osd:
+    value: 0/0
+  global/debug_mds:
+    value: 0/0
+  global/perf:
+    value: True
+  global/debug_heartbeatmap:
+    value: 0/0
+#  global/osd_pool_default_pgp_num:
+#    value: 2048
+  global/debug_asok:
+    value: 0/0
+  global/debug_objectcacher:
+    value: 0/0
+  global/debug_rbd:
+    value: 0/0
+#  global/osd_pool_default_min_size:
+#    value: 1
+  global/debug_paxos:
+    value: 0/0
+#  global/auth_service_required:
+#    value: cephx
+  global/debug_finisher:
+    value: 0/0
+#  global/mon_initial_members: server-61.0.zhsh.ustack.in,server-62.0.zhsh.ustack.in,server-63.0.zhsh.ustack.in
+#  global/fsid: 27d39faa-48ae-4356-a8e3-19d5b81e179e
+  global/debug_client:
+    value: 0/0
+  global/debug_mds_balancer:
+    value: 0/0
+#  global/cluster_network: 10.3.16.0/24
+#  global/auth_supported: cephx
+#  global/auth_cluster_required: cephx
+  global/debug_context:
+    value: 0/0
+#  global/mon_osd_nearfull_ratio: 0.85
+  global/osd_crush_chooseleaf_type:
+    value: 0
+  global/debug_perfcounter:
+    value: 0/0
+  global/debug_auth:
+    value: 0/0
+  global/debug_journal:
+    value: 0/0
+  global/debug_rados:
+    value: 0/0
+  global/err_to_syslog:
+    value: False
+  global/debug_crush:
+    value: 0/0
+  global/debug_rgw:
+    value: 0/0
+  global/mutex_perf_counter:
+    value: False
+#  global/mon_host: 10.3.0.61,10.3.0.62,10.3.0.63
+  global/debug_objecter:
+    value: 0/0
+  global/debug_ms:
+    value: 0/0
+  global/debug_mds_log_expire:
+    value: 0/0
+  global/debug_journaler:
+    value: 0/0
+  global/debug_filestore:
+    value: 0/0
+#  global/auth_client_required: cephx
+  global/log_file:
+    value: /var/log/ceph/$cluster-$name.log
+#  global/osd_pool_default_crush_rule: 2
+#  global/osd_pool_default_size: 2
+  global/debug_mds_migrator:
+    value: 0/0
+#  global/osd_pool_default_pg_num: 2048
+  global/debug_tp:
+    value: 0/0
+  global/debug_monc:
+    value: 0/0
+  global/debug_filer:
+    value: 0/0
+  global/debug_hadoop:
+    value: 0/0
+  global/debug_mds_locker:
+    value: 0/0
+  global/debug_mon:
+    value: 0/0
+#  global/public_network: 10.3.16.0/24
+  global/debug_optracker:
+    value: 0/0
+
+
+  osd/filestore_queue_max_ops:
+    value: default
+  osd/filestore_wbthrottle_xfs_bytes_start_flusher:
+    value: default
+  osd/filestore_wbthrottle_xfs_inodes_hard_limit:
+    value: default
+  osd/osd_client_message_cap:
+    value: default
+  osd/journal_max_write_entries:
+    value: default
+  osd/osd_client_message_size_cap:
+    value: default
+  osd/filestore_wbthrottle_xfs_inodes_start_flusher:
+    value: default
+  osd/osd_leveldb_paranoid:
+    value: default
+  osd/osd_deep_scrub_interval:
+    value: 604800
+  osd/filestore_fd_cache_size:
+    value: 204800
+  osd/filestore_fd_cache_random:
+    value: True
+  osd/osd_scrub_load_threshold:
+    value: 0.5
+  osd/osd_op_threads:
+    value: default
+  osd/osd_recovery_max_single_start:
+    value: default
+  osd/osd_scrub_thread_timeout:
+    value: 60
+  osd/osd_leveldb_block_size:
+    value: default
+#  osd/osd_journal_size:
+#    value: default
+  osd/filestore_fiemap:
+    value: default
+  osd/journal_queue_max_ops:
+    value: default
+  osd/filestore_wbthrottle_xfs_ios_start_flusher:
+    value: default
+  osd/osd_leveldb_bloom_size:
+    value: default
+  osd/osd_recovery_op_priority:
+    value: default
+  osd/osd_op_thread_timeout:
+    value: default
+  osd/osd_op_complaint_time:
+    value: 5
+  osd/osd_scrub_finalize_thread_timeout:
+    value: 600
+  osd/max_open_files:
+    value: 214800
+  osd/ms_dispatch_throttle_bytes:
+    value: default
+  osd/filestore_wbthrottle_xfs_bytes_hard_limit:
+    value: default
+  osd/osd_leveldb_compression:
+    value: default
+  osd/osd_deep_scrub_stride:
+    value: 524288
+  osd/osd_mon_heartbeat_interval:
+    value: 30
+  osd/osd_recovery_max_chunk:
+    value: default
+  osd/osd_scrub_min_interval:
+    value: 86400
+  osd/osd_crush_update_on_start:
+    value: False
+  osd/osd_heartbeat_interval:
+    value: 3
+  osd/osd_heartbeat_min_peers:
+    value: 10
+  osd/osd_leveldb_write_buffer_size:
+    value: default
+  osd/osd_recovery_max_active:
+    value: default
+  osd/ustack_osd_disk_type:
+    value: sata
+  osd/osd_scrub_chunk_min:
+    value: 5
+  osd/filestore_op_threads:
+    value: default
+  osd/filestore_omap_header_cache_size:
+    value: default
+  osd/osd_recovery_thread_timeout:
+    value: default
+  osd/filestore_max_inline_xattrs:
+    value: default
+  osd/filestore_xattr_use_omap:
+    value: default
+  osd/osd_scrub_chunk_max:
+    value: 25
+  osd/filestore_wbthrottle_enable:
+    value: default
+  osd/filestore_max_inline_xattr_size:
+    value: default
+  osd/osd_leveldb_max_open_files:
+    value: default
+  osd/osd_recovery_threads:
+    value: default
+  osd/journal_queue_max_bytes:
+    value: default
+  osd/osd_max_scrubs:
+    value: 1
+  osd/osd_client_op_priority:
+    value: default
+  osd/osd_leveldb_cache_size:
+    value: default
+  osd/filestore_max_sync_interval:
+    value: default
+  osd/filestore_queue_committing_max_ops:
+    value: default
+  osd/journal_max_write_bytes:
+    value: default
+  osd/osd_scrub_max_interval:
+    value: 604800
+  osd/filestore_min_sync_interval:
+    value: default
+  osd/filestore_queue_max_bytes:
+    value: default
+  osd/filestore_wbthrottle_xfs_ios_hard_limit:
+    value: default
+  osd/osd_heartbeat_grace:
+    value: 7
+
+  mon/mon_cluster_log_file:
+    value: /var/log/ceph/$cluster.log
+  mon/mon_osd_down_out_interval:
+    value: 43200
+  mon/mon_osd_adjust_heartbeat_grace:
+    value: False
+  mon/mon_cluster_log_to_syslog:
+    value: False
+  mon/mon_osd_adjust_down_out_interval:
+    value: False
+  mon/mon_warn_on_legacy_crush_tunables:
+    value: False
+  client/rbd_cache:
+    value: False
+  client/rbd_cache_size:
+    value: 134217728
+  client/rbd_cache_target_dirty:
+    value: 33554432
+  client/rbd_cache_writethrough_until_flush:
+    value: True
+  client/admin_socket:
+    value: /var/run/ceph/rbd-$pid.asok
+  client/rbd_cache_max_dirty:
+    value: 134217728
+  client/rbd_cache_max_dirty_age:
+    value: 30

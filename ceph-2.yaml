@@ -1,0 +1,3 @@
+sunfire::ceph::store::disk_type: sata
+sunfire::ceph::store::enable_mon: true
+sunfire::ceph::store::enable_rgw: true

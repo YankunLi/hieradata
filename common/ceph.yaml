@@ -1,0 +1,56 @@
+#configure common
+sunfire::ceph::store::fsid: '066F558C-6789-4A93-AAF1-5AF1BA01A3AD'
+sunfire::ceph::store::cluster: undef
+sunfire::ceph::store::authentication_type: 'cephx'
+sunfire::ceph::store::mon_initial_members: 'ceph-1,ceph-2,ceph-3'
+sunfire::ceph::store::mon_hosts: '127.0.0.1'
+sunfire::ceph::store::public_network: undef
+sunfire::ceph::store::cluster_network: undef
+
+#MON configure monitor
+#sunfire::ceph::store::enable_mon: false
+#sunfire::ceph::store::host: $::hostname
+#sunfire::ceph::store::mon_addr: $::ipaddress
+
+#OSD configure osd
+#sunfire::ceph::store::enable_osd: false
+#sunfire::ceph::store::osd_device_dict: {}
+sunfire::ceph::store::osd_journal_size: '10240'
+#sunfire::ceph::store::disk_type: 'ssd'
+
+#RGW config rgw
+#sunfire::ceph::store::enable_rgw: false
+sunfire::ceph::store::rgw_ensure: 'running'
+sunfire::ceph::store::user: root
+sunfire::ceph::store::frontend_type: 'civetweb'
+sunfire::ceph::store::rgw_frontends: "civetweb port=7480"
+sunfire::ceph::store::rgw_enable_apis: "s3, admin"
+sunfire::ceph::store::rgw_s3_auth_use_keystone: true
+sunfire::ceph::store::rgw_keystone_url: "http://keyston.com:35357/"
+sunfire::ceph::store::rgw_keystone_admin_token: "admin"
+sunfire::ceph::store::rgw_keystone_accepted_roles: "_member_, admin"
+sunfire::ceph::store::rgw_dns_name: undef
+
+#MDS config mds
+#sunfire::ceph::store::enable_mds: false
+
+#POOL configure pool
+#sunfire::ceph::store::pool_name: 'openstack-00'
+#sunfire::ceph::store::pg_num: 64
+#sunfire::ceph::store::pgp_num: undef
+#sunfire::ceph::store::size: undef
+
+#configure key for cephx
+sunfire::ceph::store::keyring: undef
+sunfire::ceph::store::admin_key: 'AQCTg71RsNIHORAAW+O6FCMZWBjmVfMIPk3MhQ=='
+sunfire::ceph::store::rgw_key: 'AQCTg71RsNIHORAAW+O6FCMZWBjmVfMIPk3MhQ=='
+sunfire::ceph::store::mon_key: 'AQDesGZSsC7KJBAAw+W/Z4eGSQGAIbxWjxjvfw=='
+sunfire::ceph::store::bootstrap_osd_key: 'AQABsWZSgEDmJhAAkAGSOOAJwrMHrM5Pz5On1A=='
+sunfire::ceph::store::mds_key: 'AQABsWZSgEDmJhAAkAGSOOAJwrMHrM5Pz5On1A=='
+
+#
+sunfire::ceph::store::mon_osd_full_ratio: '0.95'
+sunfire::ceph::store::mon_osd_nearfull_ratio: '0.85'
+sunfire::ceph::store::ceph_common_conf_sata_args: undef
+sunfire::ceph::store::ceph_common_conf_ssd_args: undef
+
