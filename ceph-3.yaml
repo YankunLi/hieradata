@@ -2,7 +2,7 @@ sunfire::ceph::store::public_network: "10.251.0.0/24"
 sunfire::ceph::store::cluster_network: "10.251.0.0/24"
 sunfire::ceph::store::ensure: present
 sunfire::ceph::store::enable_osd: true
-sunfire::ceph::store::disk_type: ssd
+sunfire::ceph::store::disk_type: sata
 sunfire::ceph::store::enable_rgw: false
 sunfire::ceph::store::enable_mon: true
 sunfire::ceph::store::enable_mds: true

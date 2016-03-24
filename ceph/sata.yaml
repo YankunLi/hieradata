@@ -229,7 +229,6 @@ sunfire::ceph::store::ceph_common_conf_sata_args:
     value: default
   osd/osd_heartbeat_grace:
     value: 7
-
   mon/mon_cluster_log_file:
     value: /var/log/ceph/$cluster.log
   mon/mon_osd_down_out_interval:
@@ -251,7 +250,7 @@ sunfire::ceph::store::ceph_common_conf_sata_args:
   client/rbd_cache_writethrough_until_flush:
     value: True
   client/admin_socket:
-    value: /var/run/ceph/rbd-$pid.asok
+    value: '/var/run/ceph/rbd-$pid.asok'
   client/rbd_cache_max_dirty:
     value: 134217728
   client/rbd_cache_max_dirty_age:
